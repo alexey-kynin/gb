@@ -6,17 +6,6 @@ def summation_func(res_sum = 0):
 
     res_num = user_num.split(' ') # получаем массив
 
-    try:
-        index = res_num.index(sp_char) #если есть символ и его индекс больше 0 то добавим к сумме цифры ДО спец символа
-        if index > 0:
-            res = 0
-            for val in res_num[:index]:
-                res += int(val)
-        return res_sum +  res
-    except ValueError: #если нет sp_char в "листе" то просто суммируем все числа приведя их к числу перед сложением
-        for val in res_num:
-            res_sum += int(val)
-        return summation_func(res_sum) #и вызовем функцию еще раз
-
+    ё
 
 print(summation_func())
