@@ -5,15 +5,15 @@
 import time
 
 class TrafficLight:
-    color = dict("красный", "желтый", "зеленый")
+    __color = {"красный": 7, "желтый": 2, "зеленый": 4}
     pause = 0
 
     def running(self):
-        for key, el in enumerate(self.color):
-            if key = 0:
-                self.pause
-            time.sleep(3)
-            print(f"{key} - {el}")
+        color_dict = self.__color
+        for key, el in enumerate(color_dict):
+            pause = color_dict.get(el)
+            print(f"{el} горит {pause} секунды")
+            time.sleep(pause)
 
 
 TrafficLight().running()
