@@ -36,10 +36,3 @@ print(cell_one / cell_two)
 
 print(cell_one.make_order(3))
 print(cell_two.make_order(2))
-
-# print(cells1)
-# print(cells1 + cells2)
-# print(cells2 - cells1)
-# print(cells2.make_order(5))
-# print(cells1.make_order(10))
-# print(cells1 / cells2)
